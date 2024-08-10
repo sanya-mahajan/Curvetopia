@@ -18,7 +18,7 @@ Paths are extracted from a CSV file containing x and y coordinates:
 ### **2. Line Simplification**
 The `isLine` function reduces a series of points to a straight line if the deviation from linearity is below a threshold.
 
-### **Circle Detection and Contour Approximation Using OpenCV**
+### **3. Circle Detection and Contour Approximation Using OpenCV**
 
 This project leverages OpenCV's powerful image processing capabilities to detect and approximate shapes within an image. The focus is on identifying contours and fitting geometric primitives, particularly circles, to these contours.
 
@@ -47,3 +47,10 @@ This project leverages OpenCV's powerful image processing capabilities to detect
 #### **Mathematical Foundation:**
 - **Contours**: Defined by level sets of the image intensity function, contours are critical in understanding the shape and geometry of objects within an image.
 - **Circle Fitting**: Using principles from computational geometry, the minimal enclosing circle is a fundamental geometric primitive, providing the best-fit approximation for closed contours.
+
+### **4. Polygon Regularlization**
+This Python script utilizes OpenCV to identify and adjust the vertices of a polygonal shape in an image, making it a regular polygon while retaining the original vertex positions as close as possible. The process involves calculating the centroid, determining the radius, and adjusting vertex positions to form a regular polygon.
+
+<img width="350" alt="image" src="https://github.com/user-attachments/assets/88f5a667-fce6-4e88-a2d9-2fa14cc4758f">
+
+
