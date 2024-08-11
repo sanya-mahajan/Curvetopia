@@ -3,13 +3,48 @@
 This project focuses on the simplification and regularization of hand-drawn shapes, particularly polygons, by processing the input paths and reducing complex paths into simpler geometric forms. The goal is to retain the original shape's orientation and approximate vertex positions while transforming it into a more regular form.
 
 ## **Features**
-
 - **Path Extraction**: Extracts paths from CSV files where each path is represented as a series of (x, y) coordinates.
 - **Line Simplification**: Simplifies hand-drawn lines into straight segments while preserving the original form when the total deviation is minimal.
 - **Polygon Regularization**: Converts hand-drawn polygons into regular polygons by adjusting vertex positions while retaining the overall orientation and relative placement of vertices.
 - **Visualization**: Compares original and processed paths using Matplotlib, providing clear before-and-after views of the shape transformations.
 
 ## **Usage**
+
+### Preprocess input
+1. Convert PNG to SVG using ImageMagick.
+2. Extract polylines from SVG using Python's `svgpathtools` library or by manually parsing the SVG file.
+
+ **Convert PNG to SVG:**
+   - Open Inkscape and import your PNG image (`File > Import`).
+   - Use the `Path > Trace Bitmap` tool to convert the bitmap image to a vector path.
+   - Save the result as an SVG file (`File > Save As` and choose SVG format).
+
+#### **Using ImageMagick:**
+
+1. **Install ImageMagick:**
+   - You can install it via Homebrew by running:
+     ```bash
+     brew install imagemagick
+     ```
+
+2. **Convert PNG to SVG:**
+   - Use the following command to convert:
+     ```bash
+     convert input.png output.svg
+     ```
+
+### Extract Polylines from SVG
+
+Once you have the SVG, you can extract the polylines using Python with the **svgpathtools** library or manually parse the SVG.
+
+#### **Using svgpathtools (Python):**
+
+1. **Install svgpathtools:**
+   ```bash
+   pip install svgpathtools
+   ```
+
+
 
 ### **1. Path Extraction**
 Paths are extracted from a CSV file containing x and y coordinates:
