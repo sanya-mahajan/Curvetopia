@@ -25,7 +25,7 @@ This project focuses on the simplification and regularization of hand-drawn shap
 2. **Convert PNG to SVG:**
    - Use the following command to convert:
      ```bash
-     convert input.png output.svg
+     magick input.png output.svg
      ```
 
 ### Extract Polylines from SVG
@@ -38,7 +38,10 @@ Once you have the SVG, you can extract the polylines using Python with the **svg
    ```bash
    pip install svgpathtools
    ```
-
+2. **Navigate to generate_polylines folder:**
+   ```bash
+   python3 svg2pl.py
+   ```
 
 
 ### **1. Path Extraction**
