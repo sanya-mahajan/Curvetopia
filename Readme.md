@@ -36,7 +36,7 @@ Once you have the SVG, you can extract the polylines using Python with the **svg
 
 1. **Install svgpathtools:**
    ```bash
-   pip install svgpathtools
+   pip3 install svgpathtools
    ```
 2. **Navigate to generate_polylines folder:**
    ```bash
