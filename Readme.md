@@ -14,6 +14,7 @@ This project focuses on the simplification and regularization of hand-drawn shap
 1. Convert PNG to SVG using ImageMagick.
 2. Extract polylines from SVG using Python's `svgpathtools` library or by manually parsing the SVG file.
 
+### Convert PNG to SVG
 #### **Using ImageMagick:**
 
 1. **Install ImageMagick:**
